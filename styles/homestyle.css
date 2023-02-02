@@ -1,0 +1,30 @@
+main
+{
+    display: flex;
+    flex-direction: row;
+}
+ol a {
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    margin: .5em .5em;
+    background: #DAD2CA;
+    color: #444;
+    text-decoration: none;
+    border-radius: .3em;
+  }
+  
+  ol a:hover { 
+    background-color:#f97188;
+ }
+  ol a:before {
+    position: absolute;
+    background: #f9dd94;
+    height: 2em;
+    width: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+  }
+  

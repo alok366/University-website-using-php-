@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="image/logo.jpg" alt="upes logo" width="10%">
+        <h1>University of petroleum and energy studies</h1>
+    </header>
+    <nav>
+        
+        <div class="special-list">
+            <ul style="list-style:none">
+                <li><a href="index.html">Home<img class="icon" src="image/home.svg" width="25" height="30"></a></li>
+                <li><a href="catalog.html">Course info<img class="icon" src="image/info.svg" width="25" height="30"></a></li>
+                <li><a href="registration.html">Apply Now<img class="icon" src="image/plus.svg" width="25" height="30"></a></li>
+                <li><a href="login.php">Login<img class="icon" src="image/login.svg" width="25" height="30"></a></li>
+            </ul>
+            <form>
+        <input type="search" placeholder="search query" id="search">
+        <input type="submit" value="Search">
+        </form>
+        </div>
+    </nav>
+    <main>
+    <h1>Registrations for 2022</h1>
+    <table border="2" style="margin: 5% auto; height:120%;">
+        <form action="script/data.php" method="post">
+        <tr><th colspan="4">Registration form</th></tr>
+        <tr>
+            <td><label>First Name</label></td>
+            <td><input type="text" name="fname"></td>
+            <td><label>Surname</label></td>
+            <td><input type="text" name="sname"></td>
+        </tr>
+        <tr>
+            <td><label>Email</label></td>
+            <td><input type="email" name="email"></td>
+            <td><label for="birthday">DOB:</label></td>
+<td><input type="date" id="birthday" name="birthday" value="<?php echo date('Y-m-d'); ?>"></td>
+        </tr>
+        <tr>
+            <td><label>Mobile No.</label></td>
+            <td><input type="number" name="mobile"></td>
+            <td><label>Gender</label></td>
+            <td><select name="Gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td><label>Course</label></td>
+            <td><select name="course">
+                <option value="Mtech">Mtech</option>
+                <option value="Btech">Btech</option>
+                <option value="BCA">BCA</option>
+                <option value="MCA">MCA</option>
+                <option value="BSc">BSc</option>
+                <option value="BCom">BCom</option>
+            </select></td>
+            <td><label>Uttrakhand Resident</label></td>
+            <td><label>Yes</label>
+                <input type="radio" id="resi" name="resident" value="Yes">
+                <label>No</label>
+                <input type="radio" id="javascript" name="resident" value="No">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4"><center><input type="submit" value="submit"></center></td>
+        </tr>
+        </form>
+    </table>
+    </main>
+    <footer>
+        <p>Follow us on:</p>
+        <a href="https://www.twitter.com">Twitter</a>
+        <a href="https://www.facebook.com">facebook</a>
+        <a href="https://www.youtube.com">Youtube</a>
+    </footer>
+</body>
+</html>
